@@ -1,3 +1,5 @@
+import java.awt.desktop.SystemEventListener;
+
 public class Main {
     public static void main(String args[])
     {
@@ -9,5 +11,10 @@ public class Main {
 
         d.play();
         c.play();
+
+
+        //  Adding some lambda functions
+        Yesno isOdd = n -> n % 2 != 0;
+        System.out.println(isOdd.test(5));
     }
 }
